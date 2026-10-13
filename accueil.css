@@ -6,12 +6,12 @@
     font-size: 1em;
     color: #F97316;
 }
-section, #bottom{
+.stable, #bottom{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-section div{
+.stable div{
     width: 200px;
 }
