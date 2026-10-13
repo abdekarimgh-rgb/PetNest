@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetNest</title>
-  <link rel="stylesheet" href="accueil.css">
+  <link rel="stylesheet" href="boutique.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
@@ -74,25 +74,63 @@
       burger.textContent = isOpen ? "☰" : "✕";
     });
   </script>
-  <section>
-        <div>
-            <img src="img/croquette1.jpg" alt="croquette du salmon pour les chiens">
-            <img src="img/croquette2.jpg" alt="JERKY STICKS  pour les chiens et les chats">
-            <img src="img/croquette3.jpg" alt="croquette  pour les chats">
-            <img src="img/croquette4.jpg" alt="croquette pour les chats">
-            <img src="img/croquette5.jpg" alt="Produits hygiéniques pour les chiens">
-        </div>
-        <div>
-            <h2>croquette du salmon 10 kg</h2>
+<main>
+
+        <section aria-label="Galerie du produit">
+            <figure>
+                <img src="img/croquette1.jpg"
+                     alt="Croquettes au salmonpour chien">
+            </figure>
+            <div>
+                <figure>
+                    <img src="img/croquette2.jpg" alt="croquette pour les chiens">
+  
+                </figure>
+
+                <figure>
+                    <img src="img/croquette3.jpg" alt="croquette pour les chats">
+                </figure>
+
+                <figure>
+                    <img src="img/croquette4.jpg" alt="croquettepour les chats">
+                </figure>
+
+                <figure>
+                    <img src="img/croquette5.jpg" alt="Produits d’hygiène">
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- Informations du produit -->
+        <section aria-labelledby="titre-produit">
+
+            <h1 id="titre-produit">Croquettes saumon &amp; riz 10 kg</h1>
+
             <p>
                 <strong>49,90 €</strong>
-                <small>TTC · soit 4,99 € / kg</small>
+                <span>TTC · soit 4,99 € / kg</span>
             </p>
-            <p>Offrez à votre chien adulte les croquettes Carnilove au saumon, sans céréales ni pommes de terre. Riches
-                en ingrédients d’origine animale, elles sont complétées par des fruits des bois, des légumes et des
-                herbes pour une alimentation savoureuse et équilibrée.</p>
-        </div>
-    </section>
+
+            <p>
+                Recette riche en saumon frais pour chiens adultes
+                de toutes tailles. Sans colorant ni conservateur artificiel.
+            </p>
+
+            <button type="button">Ajouter au panier</button>
+
+            <!-- Avantages de la boutique -->
+            <ul>
+                <li>Livraison offerte dès 49 €</li>
+                <li>Retour gratuit sous 30 jours</li>
+                <li>Conseils personnalisés en boutique</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+        
   
   <footer class="bg-[#1c1917] text-white px-6 py-12">
     <section>
