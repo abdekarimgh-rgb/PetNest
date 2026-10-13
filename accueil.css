@@ -14,3 +14,31 @@
 .stable div{
     width: 200px;
 }
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: #C2410C;
+    border: 2px solid #C2410C;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: white;
+    border: 2px solid #C2410c;
+    border-radius: 12px;
+    color: #C2410c;
+    font-size: 20px;
+    font-weight: bold;
+}
