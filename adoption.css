@@ -1,0 +1,28 @@
+.section-m {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+
+#information-m {
+    display: flex;
+    justify-content: space-around;
+}
+
+#information-m .info-m{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    padding: 12px 6px;
+    border-radius: 24px;
+    /* text-align: center; */
+    font-size: 30px;
+}
+.info-m p{
+    font-size: 16px;
+}
+.info-m h4{
+    width: auto;
+}

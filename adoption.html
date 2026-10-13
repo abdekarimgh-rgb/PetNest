@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="/accueil.css">
+    <link rel="stylesheet" href="/adoption.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>adoption</title>
+</head>
+
+<body>
+    <header class="relative flex items-center justify-between px-4 py-4 shadow-sm md:px-8">
+
+        <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-gray-800">
+             <img src="img/logo.png" alt="Logo PetNest" class="h-12 w-12 object-contain">
+            <h1>PetNest</h1>
+        </a>
+
+        <button type="button" class="text-3xl text-gray-800 md:hidden" id="burger" aria-label="Ouvrir le menu"
+            aria-controls="navLinks" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navLinks"
+            class="absolute left-0 top-full z-50 hidden w-full flex-col bg-white p-4 shadow-md md:static md:flex md:w-auto md:flex-row md:items-center md:gap-6 md:bg-transparent md:p-0 md:shadow-none">
+
+            <a href="index.html"
+                class="block w-full rounded-lg px-3 py-3 text-gray-700 hover:bg-gray-100 md:w-auto border-b border-gray-300">
+                Accueil
+            </a>
+
+            <a href="boutique.html"
+                class="block w-full rounded-lg px-3 py-3 text-gray-700 hover:bg-gray-100 md:w-auto border-b border-gray-300">
+                Boutique
+            </a>
+
+            <a href="adoption.html"
+                class="block w-full rounded-lg px-3 py-3 text-gray-700 hover:bg-gray-100 md:w-auto border-b border-gray-300">
+                Adoption
+            </a>
+
+            <a href="services.html"
+                class="block w-full rounded-lg px-3 py-3 text-gray-700 hover:bg-gray-100 md:w-auto border-b border-gray-300">
+                Services
+            </a>
+
+            <a href="contact.html"
+                class="block w-full rounded-lg px-3 py-3 text-gray-700 hover:bg-gray-100 md:w-auto border-b border-gray-300">
+                Contactez-nous
+            </a>
+
+            <a href="contact.html"
+                class="block w-full rounded-lg bg-orange-500 px-5 py-3 text-center font-semibold text-white hover:bg-orange-600 md:w-auto">
+                Prendre RDV
+            </a>
+
+        </nav>
+        <script>
+            const burger = document.getElementById("burger");
+            const navLinks = document.getElementById("navLinks");
+
+            burger.addEventListener("click", function () {
+                const isOpen = navLinks.classList.toggle("hidden");
+
+                burger.setAttribute("aria-expanded", String(!isOpen));
+                burger.setAttribute(
+                    "aria-label",
+                    isOpen ? "Ouvrir le menu" : "Fermer le menu"
+                );
+
+                burger.textContent = isOpen ? "☰" : "✕";
+            });
+        </script>
+
+    </header>
+
+    <section class="section-m">
+        <article class="article-m bg-[#FFF4ED] px-4 py4">
+            <div class="w-full">
+                <h1 class="text-3xl font-bold px-4 py-4 w-[100%]">Adoter, c'est un engagement pour la vie</h1>
+                <p class="px-4 py-4">Tous nos animaux sont vaccinés, identifiés et suivis par un vétérinaire. Notre équipe vous accompagne
+                    avant et après l'adoption.</p>
+            </div>
+            <div id="information-m" class="flex justify-around gap-0.5 w-full gap-0.2">
+                <div class="info-m">
+                    <h4>48</h4>
+                    <p>animaux à adopter</p>
+                </div>
+                <div class="info-m">
+                    <h4>312</h4>
+                    <p>adoptions en 2025</p>
+                </div>
+                <div class="info-m">
+                    <h4>100 %</h4>
+                    <p>vaccinés et identifiés</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <img src="img/" alt="">
+    </section>
+
+    <footer class="bg-[#1c1917] text-white px-6 py-12">
+        <section>
+            <div class="mb-10">
+                <h2 class="text-3xl font-bold mb-5">PetNest</h2>
+                <p class="text-lg text-gray-400">
+                    Produits, adoption responsable et services
+                    pour le bien-être de vos animaux
+                </p><br>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold mb-5">Boutiques</h3>
+
+                <ul class="space-y-4 text-lg text-gray-400">
+                    <li>Chiens</li>
+                    <li>Chats</li>
+                    <li>Rongueurs</li>
+                    <li>Oiseaux</li>
+                    <li>Poissons</li>
+                </ul>
+            </div>
+
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold mb-5">Aide</h3>
+
+                <ul class="space-y-4 text-lg text-gray-400">
+                    <li>FAQ</li>
+                    <li>Livraison</li>
+                    <li>Retours</li>
+                    <li>Conditions générales</li>
+                </ul>
+            </div>
+
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold mb-5">Contact</h3>
+
+                <ul id="infomation" class="space-y-4 text-lg text-gray-400">
+                    <li> <i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
+                    <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
+                    <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
+                    <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
+                </ul>
+            </div>
+        </section>
+        <div id="bottom" class="border-t border-stone-800 pt-8 text-gray-400">
+            <p class="mb-3">
+                &copy; 2026 PetNest. Tous droits réservés.
+            </p>
+
+            <p>Mentions légales · Confidentialité</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
