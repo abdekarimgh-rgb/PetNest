@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+button {
+    font: inherit;
+}
+.p1{
+    color: #57534e;
+}
+.sous-title{
+    margin: 25px 0px 0px 20px;
+}
+
+.choix{
+    margin: 0px 0px 21px 20px;
+}
+.choix .bt{
+    margin: 11px 1px 2px 4px;
+    padding: 8px 15px 8px 15px;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 1px;
+    font-size: 14px;
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0 1px 3px #00000010;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.burger {
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #1f2937;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px #00000015;
+}
+
+.nav.open {
+    display: flex;
+}
+
+.nav a {
+    padding: 12px;
+    color: #374151;
+    border-bottom: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav i{
+    font-size: 10px;
+    color: #475569;
+    display: flex;
+}
+
+.nav a:hover {
+    background: #f3f4f6;
+}
+
+.nav .nav-cta {
+    background: #f97316;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.nav .nav-cta:hover {
+    background: #ea580c;
+}
+
+.hero {
+    padding: 32px 16px;
+    background: #ffe4d3;
+}
+.hero1{
+    background-color: white;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.search,
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 16px auto;
+    border: 2px solid #c2410c;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search {
+    background: #c2410c;
+    color: white;
+}
+
+.button {
+    background: white;
+    color: #c2410c;
+}
+
+.pet img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 48px 24px 0;
+    background: #1c1917;
+    color: white;
+}
+
+.stable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stable div {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 16px;
+}
+
+.stable h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stable h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stable p,
+.stable ul {
+    color: #a8a29e;
+    font-size: 16px;
+}
+
+.stable li + li {
+    margin-top: 12px;
+}
+
+.stable a {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 20px;
+}
+
+#infomation li {
+    overflow-wrap: anywhere;
+}
+
+#infomation i {
+    margin-right: 8px;
+    color: #f97316;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 24px 0;
+    border-top: 1px solid #44403c;
+    color: #a8a29e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 16px 32px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+
+    }
+
+    .nav a {
+        width: auto;
+    }
+
+    .hero {
+        padding: 48px 32px;
+    }
+
+    .hero h2,
+    .hero p {
+        max-width: 700px;
+    }
+
+    .search,
+    .button {
+        display: inline-block;
+        width: auto;
+        margin-right: 12px;
+        padding: 12px 24px;
+    }
+
+    .pet img {
+        max-height: 450px;
+    }
+
+    footer {
+        padding: 48px 32px 0;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+}
