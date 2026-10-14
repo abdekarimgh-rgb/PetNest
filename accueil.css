@@ -24,7 +24,7 @@ button {
     font: inherit;
     cursor: pointer;
 }
-.logo {
+.logod {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -32,30 +32,13 @@ button {
     font-weight: bold;
     color: #1f2937;
 }
-
-.logo img {
+.logod img {
     width: 3rem;
     height: 3rem;
     object-fit: contain;
 }
-.hero {
-    padding: 2rem 1rem;
-    background: #ffe4d3;
-}
-
-.hero h2 {
-    margin-bottom: 1rem;
-    font-size: 1.875rem;
-    font-weight: bold;
-}
-
-.hero p {
-    margin-bottom: 1.5rem;
-    font-size: 1.125rem;
-}
-
-.search,
-.button {
+.searchd,
+.buttond {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -66,17 +49,17 @@ button {
     font-weight: bold;
 }
 
-.search {
+.searchd {
     background: #c2410c;
     color: white;
 }
 
-.button {
+.buttond {
     background: white;
     color: #c2410c;
 }
 
-.pet img {
+.petd img {
     display: block;
     width: 100%;
     height: auto;
@@ -90,8 +73,7 @@ footer {
     background: #1c1917;
     color: white;
 }
-
-.stable {
+.stabled {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -99,55 +81,45 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-.stable div {
+.stabled div {
     flex: 1 1 200px;
     min-width: 0;
     margin-bottom: 1rem;
 }
-
-.stable h2 {
+.stabled h2 {
     margin-bottom: 1.25rem;
     font-size: 1.875rem;
     font-weight: bold;
 }
-
-.stable h3 {
+.stabled h3 {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     font-weight: bold;
 }
-
-.stable p,
-.stable ul {
+.stabled p,
+.stabled ul {
     color: #a8a29e;
     font-size: 1rem;
 }
-
-.stable li + li {
+.stabled li + li {
     margin-top: 0.75rem;
 }
-
-.stable a {
+.stabled a {
     display: inline-block;
     margin-right: 0.75rem;
 }
-
 .fa-brands,
 .fa-solid {
     font-size: 1.25rem;
 }
-
-#infomation li {
+#infomationd li {
     overflow-wrap: anywhere;
 }
-
-#infomation i {
+#infomationd i {
     margin-right: 0.5rem;
     color: #f97316;
 }
-
-.footer-bottom {
+.footer-bottomd {
     max-width: 1200px;
     margin: 2rem auto 0;
     padding: 1.5rem 0;
@@ -156,38 +128,6 @@ footer {
     font-size: 0.875rem;
     text-align: center;
 }
-
-.footer-bottom p {
+.footer-bottomd p {
     margin: 0;
-}
-
-@media (min-width: 768px) {
-    .hero {
-        padding: 3rem 2rem;
-    }
-
-    .hero h2,
-    .hero p {
-        max-width: 700px;
-    }
-
-    .search,
-    .button {
-        display: inline-block;
-        width: auto;
-        margin-right: 0.75rem;
-        padding: 0.75rem 1.5rem;
-    }
-
-    .pet img {
-        max-height: 450px;
-    }
-
-    footer {
-        padding: 3rem 2rem 0;
-    }
-
-    .footer-bottom {
-        text-align: left;
-    }
 }
