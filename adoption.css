@@ -340,6 +340,7 @@ p {
     border-radius: 8px;
     outline: none;
     background: #EA580C;
+    border: solid 0px;
 }
 
 .btn:hover {
