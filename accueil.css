@@ -1,28 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+body {
+    background-color: white;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+h1, h2, h3 {
+    font-size: inherit;
+}
+button {
+    font: inherit;
+    cursor: pointer;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
 .hero {
-    padding: 32px 16px;
+    padding: 2rem 1rem;
     background: #ffe4d3;
 }
 
 .hero h2 {
-    margin-bottom: 16px;
-    font-size: 30px;
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
     font-weight: bold;
 }
 
 .hero p {
-    margin-bottom: 24px;
-    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
 }
 
 .search,
 .button {
     display: block;
     width: 100%;
-    padding: 12px;
-    margin: 16px auto;
+    padding: 0.75rem;
+    margin: 1rem auto;
     border: 2px solid #c2410c;
-    border-radius: 12px;
-    font-size: 18px;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
@@ -40,14 +80,113 @@
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 24px;
-    border-radius: 16px;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
+footer {
+    padding: 3rem 1.5rem 0;
+    background: #1c1917;
+    color: white;
+}
+
+.stable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stable div {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 1rem;
+}
+
+.stable h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.stable h3 {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.stable p,
+.stable ul {
+    color: #a8a29e;
+    font-size: 1rem;
+}
+
+.stable li + li {
+    margin-top: 0.75rem;
+}
+
+.stable a {
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 1.25rem;
+}
+
+#infomation li {
+    overflow-wrap: anywhere;
+}
+
+#infomation i {
+    margin-right: 0.5rem;
+    color: #f97316;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid #44403c;
+    color: #a8a29e;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
 @media (min-width: 768px) {
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav a {
+        width: auto;
+    }
+
     .hero {
-        padding: 48px 32px;
+        padding: 3rem 2rem;
     }
 
     .hero h2,
@@ -59,86 +198,16 @@
     .button {
         display: inline-block;
         width: auto;
-        margin-right: 12px;
-        padding: 12px 24px;
+        margin-right: 0.75rem;
+        padding: 0.75rem 1.5rem;
     }
 
     .pet img {
         max-height: 450px;
     }
-}
-footer {
-    padding: 48px 24px 0;
-    background: #1c1917;
-    color: white;
-}
 
-.stable {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.stable div {
-    flex: 1 1 200px;
-    min-width: 0;
-    margin-bottom: 16px;
-}
-
-.stable h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.stable h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.stable p,
-.stable ul {
-    color: #a8a29e;
-    font-size: 16px;
-}
-
-.stable li {
-    margin-bottom: 10px;
-}
-
-.stable a {
-    display: inline-block;
-    margin-right: 12px;
-}
-
-.fa-brands,
-.fa-solid {
-    color: aliceblue;
-    font-size: 20px;
-}
-
-#infomation i {
-    margin-right: 8px;
-    color: #f97316;
-}
-
-.footer-bottom {
-    max-width: 1200px;
-    margin: 32px auto 0;
-    padding: 24px 0;
-    border-top: 1px solid #44403c;
-    color: #a8a29e;
-    font-size: 14px;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
     footer {
-        padding: 48px 32px 0;
+        padding: 3rem 2rem 0;
     }
 
     .footer-bottom {
