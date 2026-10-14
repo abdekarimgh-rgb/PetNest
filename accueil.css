@@ -162,29 +162,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .site-header {
-        padding: 1rem 2rem;
-    }
-
-    .burger {
-        display: none;
-    }
-
-    .nav {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-        width: auto;
-        padding: 0;
-        box-shadow: none;
-    }
-
-    .nav a {
-        width: auto;
-    }
-
     .hero {
         padding: 3rem 2rem;
     }
