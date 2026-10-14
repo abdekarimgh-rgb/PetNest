@@ -7,46 +7,10 @@
   <title>PetNest</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-  <link rel="stylesheet" href="accueil.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
-
-  <header class="site-headerd">
-
-    <a href="index.html" class="logod">
-      <img src="img/logo.png" alt="Logo PetNest">
-      <h1>PetNest</h1>
-    </a>
-
-    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu"
-      aria-controls="navLinks" aria-expanded="false">
-      ☰
-    </button>
-
-    <nav id="navLinks" class="nav">
-      <a href="index.html">Accueil</a>
-      <a href="boutique.html">Boutique</a>
-      <a href="adoption.html">Adoption</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contactez-nous</a>
-      <a href="contact.html" class="nav-cta">Prendre RDV</a>
-    </nav>
-
-  </header>
-
-  <script>
-    const burger = document.getElementById("burger");
-    const navLinks = document.getElementById("navLinks");
-
-    burger.addEventListener("click", function () {
-      const isOpen = navLinks.classList.toggle("open");
-
-      burger.setAttribute("aria-expanded", String(isOpen));
-      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-      burger.textContent = isOpen ? "✕" : "☰";
-    });
-  </script>
   <footer>
     <section class="stabled">
       <div>
