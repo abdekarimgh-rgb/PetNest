@@ -23,10 +23,6 @@ ul {
     list-style: none;
 }
 
-/* h1, h2, h3 {
-    font-size: inherit;
-} */
-
 button {
     font: inherit;
     cursor: pointer;
@@ -316,7 +312,9 @@ html {
 }
 
 .rocky {
-    background-color: ##FAFAF9;
+    background-color: #FAFAF9;
+    gap: 24px;
+    margin: 12px 0;
 }
 
 .rocky img {
@@ -327,6 +325,9 @@ html {
 
 .info-rocky {
     padding: 12px;
+}
+.info-rocky h1{
+    font-weight: bold;
 }
 
 .info-rocky h2,
@@ -349,8 +350,12 @@ p {
 }
 
 @media (min-width: 768px) {
-    section{
-        margin: 40px;
+     section{
+        padding: 40px 80px;
+    } 
+
+    .rocky{
+        padding: 40px 80px;
     }
     .rocky-article {
         display: flex;
@@ -361,5 +366,110 @@ p {
     }
     .rocky img{
         height: 100%;
+    }
+}
+
+/* demande d'Adoption */
+
+.demande{
+    margin: 12px 0;
+}
+
+.intro{
+    margin: 8px 12px;
+}
+
+.demande h5{
+    color: #EA580C;
+}
+.demande h2{
+    margin: 12px 0;
+}
+
+/* form */
+
+.demande form input{
+    width: 90%;
+    margin: 0 12px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px ;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-self: center;
+    padding: 12px;
+    font-size: 1em;
+}
+.demande form select{
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-self: center;
+    font-size: 1em;
+}
+.demande form label{
+    width: 90%;
+    display: block;
+    padding: 12px;
+    margin: 0 20px;
+}
+.demande form textarea{
+    width: 90%;
+    height: 40px;
+    padding: 8px 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-self: center;
+    font-size: 1.3em;
+    resize: vertical;
+    min-height: 60px;
+}
+
+.input-form{
+    padding: 0 12px;
+    width: 100%;
+}
+
+.checkbox{
+    display: flex;
+}
+#accepte{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 16px;
+    left: 24px;
+}
+#accepte:checked{
+    accent-color: #EA580C;
+}
+
+#envoyer{
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    background: #EA580C;
+    border: solid 0px;
+}
+#envoyer:hover{
+    background-color: #F97316;
+}
+
+@media(min-width: 768px){
+    .demande{
+        padding: 40px 80px;
+        margin: 20px 40px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .form-m{
+        flex: grid;
+        grid-template-columns:1fr 1fr ;
+    }
+    .input-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

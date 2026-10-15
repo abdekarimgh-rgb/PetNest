@@ -2,93 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link rel="stylesheet" href="adoption.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="adoption.css">
 
-    <title>adoption</title>
+  <title>adoption</title>
 </head>
 
 <body>
-    <header class="site-header">
+  <header class="site-header">
 
-        <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Logo PetNest">
-            <h1>PetNest</h1>
-        </a>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo PetNest">
+      <h1>PetNest</h1>
+    </a>
 
-        <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
-            aria-expanded="false">
-            ☰
-        </button>
+    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
+      aria-expanded="false">
+      ☰
+    </button>
 
-        <nav id="navLinks" class="nav">
-            <a href="index.html">Accueil</a>
-            <a href="boutique.html">Boutique</a>
-            <a href="adoption.html">Adoption</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contactez-nous</a>
-            <a href="contact.html" class="nav-cta">Prendre RDV</a>
-        </nav>
+    <nav id="navLinks" class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="adoption.html">Adoption</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contactez-nous</a>
+      <a href="contact.html" class="nav-cta">Prendre RDV</a>
+    </nav>
 
-    </header>
+  </header>
 
-    <script>
-        const burger = document.getElementById("burger");
-        const navLinks = document.getElementById("navLinks");
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
 
-        burger.addEventListener("click", function () {
-            const isOpen = navLinks.classList.toggle("open");
+    burger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
 
-            burger.setAttribute("aria-expanded", String(isOpen));
-            burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-            burger.textContent = isOpen ? "✕" : "☰";
-        });
-    </script>
+      burger.setAttribute("aria-expanded", String(isOpen));
+      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+      burger.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
 
-    <section class="section-m">
-        <article class="article-m">
-            <div class="adoter">
-                <h1>Adoter, c'est un engagement pour la vie</h1>
-                <p>Tous nos animaux sont vaccinés, identifiés et suivis par un vétérinaire. Notre
-                    équipe vous accompagne
-                    avant et après l'adoption.</p>
-            </div>
-            <div id="information-m"">
-                <div class="info-m">
-                    <h5>48</h5>
-                    <p>animaux à adopter</p>
-                </div>
-                <div class="info-m">
-                    <h5>312</h5>
-                    <p>adoptions en 2025</p>
-                </div>
-                <div class="info-m">
-                    <h5>100 %</h5>
-                    <p>vaccinés et identifiés</p>
-                </div>
-            </div>
-        </article>
-    </section>
+  <section class="section-m">
+    <article class="article-m">
+      <div class="adoter">
+        <h1>Adoter, c'est un engagement pour la vie</h1>
+        <p>Tous nos animaux sont vaccinés, identifiés et suivis par un vétérinaire. Notre
+          équipe vous accompagne
+          avant et après l'adoption.</p>
+      </div>
+      <div id="information-m"">
+                <div class=" info-m">
+        <h5>48</h5>
+        <p>animaux à adopter</p>
+      </div>
+      <div class="info-m">
+        <h5>312</h5>
+        <p>adoptions en 2025</p>
+      </div>
+      <div class="info-m">
+        <h5>100 %</h5>
+        <p>vaccinés et identifiés</p>
+      </div>
+      </div>
+    </article>
+  </section>
 
-    <section class="rocky">
-        <article class="rocky-article">
-          <div>
-            <img src="img/img-m-rocki-4years.jpg" alt="Rocky, 4 ans">
-          </div>
-            <div class="info-rocky">
-                <h1>Rocky, 4 ans</h1>
-                <h2>Son histoire</h2>
-                <p>Rocky a été confié au refuge après le déménagement de sa famille. Très joueur, il adore les longues balades et apprend vite les ordres de base.</p>
-                <h2>Compatibilité</h2>
-                <button class="btn">Demander à adopter Rocky</button>
-              </div>
-        </article>
-    </section>
+  <section class="rocky">
+    <article class="rocky-article">
+      <div>
+        <img src="img/img-m-rocki-4years.jpg" alt="Rocky, 4 ans">
+      </div>
+      <div class="info-rocky">
+        <h1>Rocky, 4 ans</h1>
+        <h2>Son histoire</h2>
+        <p>Rocky a été confié au refuge après le déménagement de sa famille. Très joueur, il adore les longues balades
+          et apprend vite les ordres de base.</p>
+        <h2>Compatibilité</h2>
+        <button class="btn">Demander à adopter Rocky</button>
+      </div>
+    </article>
+  </section>
 
-      <footer>
+  <section class="demande">
+    <div class="intro">
+      <h5>FORMULAIRE</h5>
+      <h2>Demande d'adoption</h2>
+      <p>Notre équipe vous recontacte sous 48 h pour organiser une rencontre avec l'animal. Les champs marqués * sont
+        obligatoires.</p>
+    </div>
+
+    <form class="form-m" action="#">
+
+      <div class="input-1">
+        <div class="input-form">
+          <label for="Nom">Nom complet *</label>
+          <input type="text" name="Nom" placeholder="Sara Benali" required>
+        </div>
+
+        <div class="input-form">
+          <label for="email">Adresse e-mail *</label>
+          <input type="email" name="email" placeholder="sara.benali@" required>
+        </div>
+
+        <div class="input-form">
+          <label for="tele">Téléphone *</label>
+          <input type="tel" name="tele" placeholder="06 12 34 56 78" required>
+        </div class="input-form">
+
+        <div class="input-form">
+          <label for="animal">Animal choisi *</label>
+          <select name="animal">
+            <option value="chien">roky — chien 4ans</option>
+            <option value="rocky">Rocky — chien 4 ans</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="input-form">
+        <label for="Nom">Type de logement *</label>
+        <select name="logement" id="logement">
+          <option value="logement"></option>
+        </select>
+      </div>
+
+
+      <div class="input-form">
+        <label for="Nom">Votre message</label>
+        <textarea type="text" name="Nom" maxlength="200"
+          placeholder="Parlez-nous de votre foyer et de votre rythme de vie…" required>
+      </textarea>
+      </div>
+
+      <div class="input-form checkbox">
+        <input type="checkbox" name="accepte" id="accepte">
+        <label for="accepte">J'accepte d'être recontacté(e) au sujet de ma demande.*</label>
+      </div>
+
+      <div class="input-form">
+        <label for="envoyer"></label>
+        <input type="button" name="envoyer" id="envoyer" value="Envoyer ma demande">
+      </div>
+    </form>
+
+  </section>
+
+  <footer>
     <section class="stable">
       <div>
         <h2>PetNest</h2>
