@@ -242,6 +242,48 @@ img {
     background-color: #C2410C;
 
 }
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    gap: 8px;
+}
+.pages button{
+    border: solid 1px #E7E5E4;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+}
+/* .pages .bt-actif{
+    border-radius: 8px;
+
+} */
+.skip_left , .skip_right{
+    border-radius: 12px;
+}
+.skip_left .fa-solid ,
+.skip_right .fa-solid{
+    font-size: 12px;
+}
+.pages .N1{
+    border-radius: 12px;
+}
+.pages .N2{
+    border-radius: 12px;
+}
+.pages .N3{
+    border-radius: 12px;
+}
+
+.pages button:hover{
+    background-color: #C2410C;
+    color: white;
+}
+button .bt-actif{
+    color: #FF6B2C;
+    font-weight: 600;
+}
 
 
 /*footer style*/
