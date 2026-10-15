@@ -1,0 +1,475 @@
+/* header header */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 1px 3px #00000010;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.burger {
+    border: none;
+    background: none;
+    font-size: 1.875rem;
+    color: #1f2937;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px #00000015;
+}
+
+.nav.open {
+    display: flex;
+}
+
+.nav a {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    color: #374151;
+}
+
+.nav a:hover {
+    background: #f3f4f6;
+}
+
+.nav .nav-cta {
+    background: #f97316;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav .nav-cta:hover {
+    background: #ea580c;
+}
+
+.hero {
+    padding: 2rem 1rem;
+    background: #ffe4d3;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+footer {
+    padding: 3rem 1.5rem 0;
+    background: #1c1917;
+    color: white;
+}
+
+.stable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stable div {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 1rem;
+}
+
+.stable h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.stable h3 {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.stable p,
+.stable ul {
+    color: #a8a29e;
+    font-size: 1rem;
+}
+
+.stable li+li {
+    margin-top: 0.75rem;
+}
+
+.stable a {
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 1.25rem;
+}
+
+#infomation li {
+    overflow-wrap: anywhere;
+}
+
+#infomation i {
+    margin-right: 0.5rem;
+    color: #f97316;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid #44403c;
+    color: #a8a29e;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav a {
+        width: auto;
+    }
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+
+    footer {
+        padding: 3rem 2rem 0;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+}
+
+/*adoption*/
+
+body{
+    background-color: #FAFAF9;
+}
+html {
+    font-family: sans-serif;
+}
+
+.section-m {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.article-m {
+    background-color: #FAFAF9;
+    padding: 12px;
+}
+
+.adoter {
+    width: 100%;
+    padding: 16px;
+}
+
+.adoter p {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.adoter h1 {
+    line-height: 38px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+#information-m {
+    display: flex;
+    margin: 12px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#information-m .info-m {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    height: 120px;
+    gap: 12px;
+    padding: 12px 6px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.info-m {
+    padding: 16px 12px;
+    height: 104px;
+}
+
+.info-m p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.info-m h4 {
+    width: auto;
+}
+
+@media(min-width: 768px) {
+    .article-m {
+        display: flex;
+    }
+
+    #information-m {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+    }
+
+}
+
+.rocky {
+    background-color: #FAFAF9;
+    gap: 24px;
+    margin: 12px 0;
+}
+
+.rocky img {
+    width: 100%;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.info-rocky {
+    padding: 12px;
+}
+.info-rocky h1{
+    font-weight: bold;
+}
+
+.info-rocky h2,
+p {
+    margin: 12px 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    background: #EA580C;
+    border: solid 0px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #F97316;
+}
+
+@media (min-width: 768px) {
+     section{
+        padding: 40px 80px;
+    } 
+
+    .rocky{
+        padding: 40px 80px;
+    }
+    .rocky-article {
+        display: flex;
+    }
+
+    .btn{
+        width: auto;
+    }
+    .rocky img{
+        height: 100%;
+    }
+}
+
+/* demande d'Adoption */
+
+.demande{
+    margin: 12px 0;
+}
+
+.intro{
+    margin: 8px 12px;
+}
+
+.demande h5{
+    color: #EA580C;
+}
+.demande h2{
+    margin: 12px 0;
+}
+
+/* form */
+
+.demande form input{
+    width: 90%;
+    margin: 0 12px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px ;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-self: center;
+    padding: 12px;
+    font-size: 1em;
+}
+.demande form select{
+    width: 90%;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-self: center;
+    font-size: 1em;
+}
+.demande form label{
+    width: 90%;
+    display: block;
+    padding: 12px;
+    margin: 0 20px;
+}
+.demande form textarea{
+    width: 90%;
+    height: 40px;
+    padding: 8px 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-self: center;
+    font-size: 1.3em;
+    resize: vertical;
+    min-height: 60px;
+}
+
+.input-form{
+    padding: 0 12px;
+    width: 100%;
+}
+
+.checkbox{
+    display: flex;
+}
+#accepte{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 16px;
+    left: 24px;
+}
+#accepte:checked{
+    accent-color: #EA580C;
+}
+
+#envoyer{
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    background: #EA580C;
+    border: solid 0px;
+}
+#envoyer:hover{
+    background-color: #F97316;
+}
+
+@media(min-width: 768px){
+    .demande{
+        padding: 40px 80px;
+        margin: 20px 40px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .form-m{
+        flex: grid;
+        grid-template-columns:1fr 1fr ;
+    }
+    .input-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
