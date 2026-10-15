@@ -160,6 +160,21 @@ footer {
 .footer-bottomd p {
     margin: 0;
 }
+.catalogue{
+    background-color: #fff4ed;
+}
+.describe{
+    padding: 30px;
+}
+.top , .end{
+    color: #c2410c;
+}
+.end{
+    margin: 20px;
+}
+.middle{
+    font-size: 24px;
+}
 @media (min-width: 768px) {
     .herod {
         display: grid;
@@ -171,7 +186,6 @@ footer {
     .test{
         grid-column: 2/6;
     }
-
     .herod h2,
     .herod p {
         max-width: 500px;
@@ -203,5 +217,18 @@ footer {
 
     .footer-bottomd {
         text-align: left;
+    }
+    .end{
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+    }
+    .left{
+        padding-bottom: 30px;
+
+    }
+    .describe{
+        display: flex;
+        justify-content: space-between;
     }
 }
