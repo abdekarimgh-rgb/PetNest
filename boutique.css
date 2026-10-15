@@ -1,5 +1,3 @@
-
-
 * {
     margin: auto;
     padding: auto;
@@ -12,48 +10,54 @@ body {
     line-height: 1.3;
 }
 
-.firstSection{
+.firstSection {
     margin-top: 2%;
     width: 80%;
     display: flex;
     gap: 2%;
     margin-bottom: 50px;
 }
-.grid{
+
+.grid {
     width: 90%;
     max-width: 460px;
-    display: grid ;
-    grid-template-columns:repeat(4,1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px 110px;
     gap: 2%;
 }
-.grid1{
+
+.grid1 {
     grid-column: 1/-1;
-    
+
 }
-.grid img{
+
+.grid img {
 
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    
+
 }
 
-.div1{
+.div1 {
     margin-top: 0%;
     margin-left: 2%;
 
 }
-h1{
+
+h1 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 40px;
 }
-.p2{
+
+.p2 {
     margin-top: 7%;
     font-size: 15px;
 }
-.p1{
+
+.p1 {
     font-size: 25px;
 }
 
@@ -91,7 +95,7 @@ h1{
     color: #222;
 }
 
-.flex1 > div:last-child {
+.flex1>div:last-child {
     flex: 1;
 }
 
@@ -110,7 +114,7 @@ h1{
     cursor: pointer;
 }
 
-.liste1{
+.liste1 {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -122,21 +126,14 @@ h1{
 
 
 }
-.liste1 p{
+
+.liste1 p {
     margin-bottom: 10px;
 
 }
+
 .check {
     color: green;
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
 
