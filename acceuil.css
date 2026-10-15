@@ -45,7 +45,52 @@ button {
     height: 48px;
     object-fit: contain;
 }
+.herod {
+    padding: 32px 16px;
+    background: #ffe4d3;
+}
 
+.herod h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.herod p {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.searchd,
+.buttond {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 16px auto;
+    border: 2px solid #c2410c;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.searchd {
+    background: #c2410c;
+    color: white;
+}
+
+.buttond {
+    background: white;
+    color: #c2410c;
+}
+
+.petd img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 16px;
+    object-fit: cover;
+}
 footer {
     padding: 48px 24px 0;
     background: #1c1917;
@@ -112,7 +157,51 @@ footer {
     font-size: 14px;
     text-align: center;
 }
-
 .footer-bottomd p {
     margin: 0;
+}
+@media (min-width: 768px) {
+    .herod {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 32px;
+        padding: 48px 32px;
+    }
+    .test{
+        grid-column: 2/6;
+    }
+
+    .herod h2,
+    .herod p {
+        max-width: 500px;
+    }
+
+    .searchd,
+    .buttond {
+        display: inline-block;
+        width: auto;
+        margin: 0 8px 0 0;
+        padding: 12px 16px;
+    }
+
+    .petd {
+        width: 60%;
+        grid-column: 6/10;
+    }
+
+    .petd img {
+        width: 100%;
+        height: 315px;
+        margin-top: 0;
+        object-fit: cover;
+    }
+
+    footer {
+        padding: 48px 32px 0;
+    }
+
+    .footer-bottomd {
+        text-align: left;
+    }
 }
