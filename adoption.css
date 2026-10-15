@@ -229,9 +229,10 @@ footer {
 
 /*adoption*/
 
-body{
+body {
     background-color: #FAFAF9;
 }
+
 html {
     font-family: sans-serif;
 }
@@ -326,7 +327,8 @@ html {
 .info-rocky {
     padding: 12px;
 }
-.info-rocky h1{
+
+.info-rocky h1 {
     font-weight: bold;
 }
 
@@ -350,59 +352,61 @@ p {
 }
 
 @media (min-width: 768px) {
-     section{
-        padding: 40px 80px;
-    } 
-
-    .rocky{
+    section {
         padding: 40px 80px;
     }
+
+    .rocky {
+        padding: 40px 80px;
+    }
+
     .rocky-article {
         display: flex;
     }
 
-    .btn{
+    .btn {
         width: auto;
     }
-    .rocky img{
+
+    .rocky img {
         height: 100%;
     }
 }
 
 /* demande d'Adoption */
 
-.demande{
+.demande {
     margin: 12px 0;
 }
 
-.intro{
+.intro {
     margin: 8px 12px;
 }
 
-.demande h5{
+.demande h5 {
     color: #EA580C;
 }
-.demande h2{
+
+.demande h2 {
     margin: 12px 0;
 }
 
 /* form */
 
-
-
-.demande form input{
+.demande form input {
     width: 90%;
     margin: 0 12px;
     height: 40px;
     border-radius: 8px;
-    border: solid 1px ;
+    border: solid 1px;
     background-color: #FFFFFF;
     display: flex;
     justify-self: center;
     padding: 12px;
     font-size: 1em;
 }
-.demande form select{
+
+.demande form select {
     width: 90%;
     height: 40px;
     border-radius: 12px;
@@ -410,15 +414,18 @@ p {
     justify-self: center;
     font-size: 1em;
 }
+
 .demande form label{
     display: flex;
     justify-self: center;
     width: 90%;
-    display: block;
+    /* display: block; */
     padding: 12px;
     margin: 0 20px;
+    
 }
-.demande form textarea{
+
+.demande form textarea {
     width: 90%;
     height: 40px;
     padding: 8px 8px;
@@ -430,26 +437,28 @@ p {
     min-height: 60px;
 }
 
-.input-form{
+.input-form {
     padding: 0 12px;
     width: 100%;
 }
 
-.checkbox{
+.checkbox {
     display: flex;
 }
-#accepte{
+
+#accepte {
     width: 16px;
     height: 16px;
     position: relative;
     top: 16px;
     left: 24px;
 }
-#accepte:checked{
+
+#accepte:checked {
     accent-color: #EA580C;
 }
 
-#envoyer{
+#envoyer {
     width: 90%;
     padding: 12px;
     border-radius: 8px;
@@ -457,22 +466,25 @@ p {
     background: #EA580C;
     border: solid 0px;
 }
-#envoyer:hover{
+
+#envoyer:hover {
     background-color: #F97316;
 }
 
-@media(min-width: 768px){
-    .demande{
+@media(min-width: 768px) {
+    .demande {
         padding: 40px 80px;
         margin: 20px 40px;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
-    .form-m{
+
+    .form-m {
         flex: grid;
-        grid-template-columns:1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
     }
-    .input-1{
+
+    .input-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0 12px;
