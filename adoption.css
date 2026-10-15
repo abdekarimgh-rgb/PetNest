@@ -388,6 +388,8 @@ p {
 
 /* form */
 
+
+
 .demande form input{
     width: 90%;
     margin: 0 12px;
@@ -409,6 +411,8 @@ p {
     font-size: 1em;
 }
 .demande form label{
+    display: flex;
+    justify-self: center;
     width: 90%;
     display: block;
     padding: 12px;
@@ -471,5 +475,6 @@ p {
     .input-1{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0 12px;
     }
 }
