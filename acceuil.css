@@ -46,37 +46,6 @@ button {
     object-fit: contain;
 }
 
-.searchd,
-.buttond {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin: 16px auto;
-    border: 2px solid #c2410c;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.searchd {
-    background: #c2410c;
-    color: white;
-}
-
-.buttond {
-    background: white;
-    color: #c2410c;
-}
-
-.petd img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 24px;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
 footer {
     padding: 48px 24px 0;
     background: #1c1917;
