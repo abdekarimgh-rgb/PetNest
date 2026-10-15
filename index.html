@@ -5,13 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetNest</title>
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-  <link rel="stylesheet" href="acceuil.css">
+      <link rel="stylesheet" href="acceuil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <section class="herod">
+  <header class="site-header">
+
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo PetNest">
+      <h1>PetNest</h1>
+    </a>
+
+    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks" class="nav">
+      <a href="index.html">Accueil <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="boutique.html">Boutique <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="adoption.html">Adoption <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="services.html">Services <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html">Contactez-nous <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html" class="nav-cta">Prendre RDV</a>
+    </nav>
+
+  </header>
+    <section class="herod">
     <div class="test">
       <h2>Tout pour le bonheur de vos animaux</h2>
       <p>
@@ -85,6 +110,19 @@
       <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
     </div>
   </footer>
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      burger.setAttribute("aria-expanded", String(isOpen));
+      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+      burger.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
+
 
 </body>
 
