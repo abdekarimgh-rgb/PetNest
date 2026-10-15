@@ -1,21 +1,67 @@
+.Hero {
+    width: 375px;
+    height: 302px;
+    gap : 12px;
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    background-color: rgba(255, 244, 237, 1);
+}
+.page-title {
+    font-family: 'Inter', sans-serif;
+    color: #C2410C;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    width: 138px;
+}
+.Hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #1C1917;
+}
+#toilettage {
+    font-family: 'Inter' , sans-serif;
+    color: #57534E;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+}
 .icon {
     font-size: 18px;
     color: #000;
 }
 body {
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 8px;
     background-color: #f9f9f9;
-
 }
+
+.FAQ {
+    background-color: #FAFAF9; 
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .FAQ-Section {
-    max-width: 800px;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 343px; /*[cite: 5]*/
+    gap: 12px; /*[cite: 5]*/
+    margin: 0 auto;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
 }
 .FAQ-Title {
     text-align: center;
@@ -26,6 +72,9 @@ body {
 .FAQ-QA {
     border-bottom: 1px solid #ddd;
     padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 .FAQ-Questions {
     background: none;
@@ -39,21 +88,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.hero {
-    width: 375px;
-    height: 302px;
-    gap : 12px;
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 32px;
-    background-color: #FFF4ED;
-}
-.page-title {
-    font-family: Inter;
-    color: #C2410C;
-    height: 16px;
-    width: 198px; 
-
 }
