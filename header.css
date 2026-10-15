@@ -8,18 +8,11 @@ html {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
-button {
-    font: inherit;
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
 }
 
 .site-header {
@@ -30,6 +23,7 @@ button {
     position: relative;
     box-shadow: 0 1px 3px #00000010;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -79,7 +73,8 @@ button {
     align-items: center;
     justify-content: space-between;
 }
-.nav i{
+
+.nav i {
     font-size: 10px;
     color: #475569;
     display: flex;
@@ -99,4 +94,43 @@ button {
 
 .nav .nav-cta:hover {
     background: #ea580c;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 16px 32px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav a {
+        width: auto;
+        border-bottom-style: hidden;
+    }
+
+    .nav i {
+        display: none;
+    }
+
+    .nav .nav-cta {
+        margin-top: 0px;
+        margin-left: 10px
+    }
 }
