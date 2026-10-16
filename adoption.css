@@ -10,10 +10,6 @@ html {
     line-height: 1.5;
 }
 
-body {
-    background-color: white;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -230,7 +226,7 @@ footer {
 /*adoption*/
 
 body {
-    background-color: #FAFAF9;
+    background-color: #FFFFFF;
 }
 
 html {
@@ -238,6 +234,7 @@ html {
 }
 
 .section-m {
+    background-color: #FAFAF9;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -315,7 +312,6 @@ html {
 .rocky {
     background-color: #FAFAF9;
     gap: 24px;
-    margin: 12px 0;
 }
 
 .rocky img {
@@ -419,10 +415,8 @@ p {
     display: flex;
     justify-self: center;
     width: 90%;
-    /* display: block; */
-    padding: 12px;
+    padding: 8px 8px 8px 0;
     margin: 0 20px;
-    
 }
 
 .demande form textarea {
@@ -438,8 +432,11 @@ p {
 }
 
 .input-form {
-    padding: 0 12px;
     width: 100%;
+}
+
+#envoyer{
+    width: 215px;
 }
 
 .checkbox {
@@ -459,8 +456,11 @@ p {
 }
 
 #envoyer {
+    display: flex;
+    align-content: center;
+    height: 50px;
     width: 90%;
-    padding: 12px;
+    padding: 16px;
     border-radius: 8px;
     outline: none;
     background: #EA580C;
@@ -470,23 +470,34 @@ p {
 #envoyer:hover {
     background-color: #F97316;
 }
-
 @media(min-width: 768px) {
     .demande {
         padding: 40px 80px;
-        margin: 20px 40px;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
 
     .form-m {
+        background-color: #FAFAF9;
         flex: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 15px;
     }
 
     .input-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         padding: 0 12px;
     }
+
+    #envoyer{
+        width: 215px;
+        float: left;
+    }
 }
+ @media (max-width: 935px){
+    .input-1{
+        display: flex;
+        flex-direction: column;
+    }
