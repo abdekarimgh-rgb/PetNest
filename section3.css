@@ -17,48 +17,10 @@
     overflow: hidden;
     background-color: white;
 }
+
 .animal-img {
     display: block;
     width: 100%;
     height: 280px;
     object-fit: cover;
-}
-
-.animal-face {
-    margin: 16px 18px 8px;
-}
-
-.animal-desc {
-    font-size: 20px;
-    font-weight: bold;
-    color: #292524;
-}
-
-.animal-align {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    flex: 1;
-    margin: 0 18px 18px;
-}
-
-.animal-text {
-    font-size: 18px;
-    font-weight: normal;
-    color: #292524;
-}
-
-.animal-button {
-    display: block;
-    width: 100%;
-    padding: 14px 10px;
-    background-color: white;
-    color: #c2410c;
-    border: 2px solid #c2410c;
-    border-radius: 14px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
 }
