@@ -165,10 +165,6 @@ footer {
 .footer-bottomd p {
     margin: 0;
 }
-
-.catalogue {
-    background-color: #fff4ed;
-}
 .catalogues{
     background-color: #F0FFFA;
 }
@@ -237,7 +233,33 @@ article > img {
     align-items: center;
     justify-content: space-between;
 }
-
+.containe{
+    background-color: #f0fdfa;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:   1fr 1fr;
+    border: 1px solid #f0fdfa;
+    border-radius: 16px;
+}
+.marque{
+    background-color: #e7e5e4;
+    border: 1px solid #e7e5e4;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    text-align: center;
+    margin : 5px 5px
+}
+.section4{
+    background-color: #f0fdfa;
+    padding: 10px;
+}
+.tittre{
+    text-align: center;
+    font-size: larger;
+    margin: 15px 0px;
+    background-color: #f0fdfa;
+}
 @media (min-width: 768px) {
     .herod {
         display: grid;

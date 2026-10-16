@@ -14,41 +14,41 @@
 
 <body>
 
-    <header class="site-header">
+  <header class="site-header">
 
-        <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Logo PetNest">
-            <h5>PetNest</h5>
-        </a>
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo PetNest">
+      <h5>PetNest</h5>
+    </a>
 
-        <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
-            aria-expanded="false">
-            ☰
-        </button>
+    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
+      aria-expanded="false">
+      ☰
+    </button>
 
-        <nav id="navLinks" class="nav">
-            <a href="index.html">Accueil <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
-            <a href="boutique.html">Boutique <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
-            <a href="adoption.html">Adoption <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
-            <a href="services.html">Services <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
-            <a href="contact.html">Contactez-nous <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
-            <a href="contact.html" class="nav-cta">Prendre RDV</a>
-        </nav>
+    <nav id="navLinks" class="nav">
+      <a href="index.html">Accueil <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="boutique.html">Boutique <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="adoption.html">Adoption <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="services.html">Services <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html">Contactez-nous <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html" class="nav-cta">Prendre RDV</a>
+    </nav>
 
-    </header>
-    
-    <script>
-        const burger = document.getElementById("burger");
-        const navLinks = document.getElementById("navLinks");
+  </header>
 
-        burger.addEventListener("click", function () {
-            const isOpen = navLinks.classList.toggle("open");
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
 
-            burger.setAttribute("aria-expanded", String(isOpen));
-            burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-            burger.textContent = isOpen ? "✕" : "☰";
-        });
-    </script>
+    burger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      burger.setAttribute("aria-expanded", String(isOpen));
+      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+      burger.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
   <section class="herod">
     <div class="test">
       <h2>Tout pour le bonheur de vos animaux</h2>
@@ -126,7 +126,7 @@
       </div>
       <div class="animal-all">
         <article class="animal-card">
-          <img class="animal-img" src="img/bernese.jpeg" alt="Moka, un chien dans un champ">
+          <img class="animal-img" src="img/bernese.jpeg" alt="a mountain dog inside a farm of flowers">
 
           <div class="animal-face">
             <p class="animal-desc">Moka</p>
@@ -139,7 +139,7 @@
         </article>
 
         <article class="animal-card">
-          <img class="animal-img" src="img/border.jpeg" alt="Rocky, un chien dans la nature">
+          <img class="animal-img" src="img/border.jpeg" alt="a border collie dog in the nature">
 
           <div class="animal-face">
             <p class="animal-desc">Rocky</p>
@@ -152,7 +152,7 @@
         </article>
 
         <article class="animal-card">
-          <img class="animal-img" src="img/golden.jpeg" alt="Noisette, un chien dans un jardin">
+          <img class="animal-img" src="img/golden.jpeg" alt="a golder retriver smelling pink flowers">
 
           <div class="animal-face">
             <p class="animal-desc">Noisette</p>
@@ -164,7 +164,18 @@
           </div>
         </article>
       </div>
-
+    </section>
+    <section>
+      <div class= "section4">
+      <h3 class = "tittre">Nos marques partenaires</h3>
+      <div class= "containe">
+        <p class="marque">Marque A</p>
+        <p class="marque">Marque B</p>
+        <p class="marque">Marque C</p>
+        <p class="marque">Marque D</p>
+        <p class="marque">Marque E</p>
+        <p class="marque">Marque F</p>
+      </div>
     </section>
     <footer>
       <section class="stabled">
