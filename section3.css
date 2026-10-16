@@ -56,3 +56,29 @@
     font-weight: bold;
     text-align: center;
 }
+@media (min-width: 768px) {
+    .animal-all {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 28px;
+        max-width: 1240px;
+        padding: 0 20px 32px;
+    }
+
+    .animal-card {
+        flex: 1;
+    }
+
+    .animal-img {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .animal-align {
+        flex: 1;
+    }
+
+    .animal-text {
+        min-height: 54px;
+    }
+}
