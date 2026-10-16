@@ -102,6 +102,12 @@ a {
 
 @media (min-width: 768px) {
     .site-header {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+    .site-header {
         padding: 16px 32px;
     }
 
