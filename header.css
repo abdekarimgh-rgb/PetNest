@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0 1px 3px #00000010;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.burger {
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #1f2937;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px #00000015;
+}
+
+.nav.open {
+    display: flex;
+}
+
+.nav a {
+    padding: 12px;
+    color: #374151;
+    border-bottom: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav i {
+    font-size: 10px;
+    color: #475569;
+    display: flex;
+}
+
+.nav a:hover {
+    background: #f3f4f6;
+}
+
+.nav .nav-cta {
+    background: #f97316;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.nav .nav-cta:hover {
+    background: #ea580c;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 16px 32px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .nav a {
+        width: auto;
+        border-bottom-style: hidden;
+    }
+
+    .nav i {
+        display: none;
+    }
+
+    .nav .nav-cta {
+        margin-top: 0px;
+        margin-left: 10px
+    }
+}
