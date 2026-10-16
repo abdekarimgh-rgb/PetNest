@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetNest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo PetNest">
+            <h5>PetNest</h5>
+        </a>
+
+        <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navLinks" class="nav">
+            <a href="index.html">Accueil <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+            <a href="boutique.html">Boutique <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+            <a href="adoption.html">Adoption <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+            <a href="services.html">Services <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+            <a href="contact.html">Contactez-nous <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+            <a href="contact.html" class="nav-cta">Prendre RDV</a>
+        </nav>
+
+    </header>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const navLinks = document.getElementById("navLinks");
+
+        burger.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("open");
+
+            burger.setAttribute("aria-expanded", String(isOpen));
+            burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+            burger.textContent = isOpen ? "✕" : "☰";
+        });
+    </script>
+    <section class="boutique">
+        <div class="tete-de-page">
+            <h1>Boutique <i class="fa-solid fa-minus"></i> Chiens</h1>
+            <p class="p1">Alimentation, accesoires, hygiène et jouets sélectionnés par notre équipe.</p>
+        </div>
+        <section class="element-boutique">
+            <div class="container_b">
+                <div class="menu_b">
+                    <h4>Animal</h4>
+                    <div class="choix">
+                        <button type="button" class="bt">Tous</button>
+                        <button type="button" class="bt">Chiens</button>
+                        <button type="button" class="bt">Chats</button>
+                        <button type="button" class="bt">Rongeurs</button>
+                        <button type="button" class="bt">Oiseaux</button>
+                        <button type="button" class="bt">Poissons</button>
+                    </div>
+                </div>
+                <div class="prix_range">
+                    <div class="title_range">
+                        <h4>Prix</h4>
+                </div>
+                <div class="range">
+                    <input type="range" name="prix" id="prix">
+                </div>
+                        <div class="price">
+                            <p>0$</p>
+                            <p>100$</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bt-rest" type="reset">Réinitialiser les filtres</button>
+                    </div>
+                </div>
+
+                <section class="carte_b">
+                    <div class="trier">
+                        <p>6 produits affichés (aria-live)</p>
+                        <div class="select-trier">
+                            <label for="sort">Trier par</label>
+                            <select id="sort" name="sort">
+                                <option value="price-asc">Prix croissant</option>
+                                <option value="price-desc">Prix décroissant</option>
+                            </select>
+                        </div>
+                    </div>
+                    <section class="carte_btn">
+                        <article class="article_carte">
+                            <div class="full-carte">
+                                <img src="img/img_01.png" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Croquettes saumon & riz</h4>
+                                    <div class="prix">
+                                        <p>49,90$</p>
+                                        <button class="btn-C" type="button"><a href="boutique.html">Ajouter</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-carte">
+                                <img src="img/croquette5.jpg" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Os à mâcher naturels x3</h4>
+                                    <div class="prix">
+                                        <p>8,90$</p>
+                                        <button class="btn-C" type="button">Ajouter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-carte">
+                                <img src="img/img02.jpg" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Harnais réglable taille M</h4>
+                                    <div class="prix">
+                                        <p>21,15$</p>
+                                        <button class="btn-C" type="button">Ajouter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-carte">
+                                <img src="img/croquettes.jpg" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Panier déhoussable 80 cm</h4>
+                                    <div class="prix">
+                                        <p>59,00$</p>
+                                        <button class="btn-C" type="button">Ajouter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-carte">
+                                <img src="img/croquette3.jpg" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Shampooing peaux </h4>
+                                    <div class="prix">
+                                        <p>12,50$</p>
+                                        <button class="btn-C" type="button">Ajouter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="full-carte">
+                                <img src="img/croquette4.jpg" alt="croquettes">
+                                <div class="cartes">
+                                    <h4>Balles lumineuses x2</h4>
+                                    <div class="prix">
+                                        <p>9,90$</p>
+                                        <button class="btn-C" type="button">Ajouter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="pages">
+                            <button class="skip_left"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="N1" type="button">1</button>
+                            <button class="N2" type="button">2</button>
+                            <button class="N3" type="button">3</button>
+                            <button class="skip_right"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+                </section>
+        </section>
+
+        <footer>
+            <section class="stable">
+                <div>
+                    <h2>PetNest</h2>
+                    <p>
+                        Produits, adoption responsable et services
+                        pour le bien-être de vos animaux
+                    </p><br>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-solid fa-share"></i></a>
+                </div>
+
+                <div>
+                    <h3>Boutiques</h3>
+                    <ul>
+                        <li>Chiens</li>
+                        <li>Chats</li>
+                        <li>Rongueurs</li>
+                        <li>Oiseaux</li>
+                        <li>Poissons</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Aide</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Livraison</li>
+                        <li>Retours</li>
+                        <li>Conditions générales</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+                    <ul id="infomation">
+                        <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
+                        <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
+                        <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
+                        <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
