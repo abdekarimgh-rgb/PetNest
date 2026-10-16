@@ -85,7 +85,7 @@ h1 {
 }
 
 .nav .nav-cta {
-    background: #f97316;
+    background: #C2410C;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -112,7 +112,7 @@ button {
 /* BODY PAGE */
 .tete-de-page {
     padding: 32px 16px;
-    background: #ffe4d3;
+    background: #FFF4ED;
 }
 
 .tete-de-page h1 {
@@ -127,17 +127,14 @@ button {
 
 }
 
-.sous-title {
+/* .sous-title {
     margin: 25px 0px 0px 20px;
-}
+} */
 
 .p1 {
     color: #57534e;
 }
 
-.p2 {
-    margin-left: 20px;
-}
 
 .choix {
     margin: 0px 0px 21px 20px;
@@ -217,7 +214,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .prix p {
@@ -240,7 +237,8 @@ img {
     margin-right: 20px;
     border-radius: 12px;
     background-color: #C2410C;
-
+    color: white;
+    border-color: white;
 }
 .pages{
     display: flex;
@@ -364,8 +362,16 @@ footer {
 }
 
 @media (min-width: 768px) {
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
     .site-header {
-        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 120px;
+        padding-left: 120px;
     }
 
     .burger {
@@ -394,9 +400,104 @@ footer {
 
     .nav .nav-cta {
         margin-top: 0px;
-        margin-left: 10px
+        margin-left: 100px
     }
+    .tete-de-page h1 {
+    padding-left: 100px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
 
+}
+.element-boutique{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.article_carte{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.carte_b{
+    display: flex;
+    flex-direction: column;
+}
+.p1{
+    padding-left: 100px;
+}
+.boutique p {
+    font-size: 16px;
+
+}
+.trier .p{
+    display: flex;
+    justify-content: flex-start;
+}
+.container_b{
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+}
+.menu_b{
+    width: 22%;
+    flex-shrink: flex-start;
+    background-color:#FAFAF9;
+    margin-left: 60px;
+}
+.menu_b h3{
+    padding: 20px 0px 0px 25px;
+}
+
+.choix{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    width: 80%;
+    padding: 0px;
+}
+.choix button {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+.carte_b{
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+}
+.carte_b .full-carte{
+    width: 277px;
+}
+.full-carte img {
+    width: 100%;
+}
+.cartes{
+    width: 100%;
+    margin: 0;
+    padding: 16px 8px;
+}
+.trier{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.catre_btn{
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+
+
+}
+select{
+    width: 25%;
+}
 footer {
     padding: 48px 32px 0;
 }
