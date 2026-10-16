@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-size: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.logod {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.logod img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.searchd,
+.buttond {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 16px auto;
+    border: 2px solid #c2410c;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.searchd {
+    background: #c2410c;
+    color: white;
+}
+
+.buttond {
+    background: white;
+    color: #c2410c;
+}
+
+.petd img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 48px 24px 0;
+    background: #1c1917;
+    color: white;
+}
+
+.stabled {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stabled div {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 16px;
+}
+
+.stabled h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stabled h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stabled p,
+.stabled ul {
+    color: #a8a29e;
+    font-size: 16px;
+}
+
+.stabled li + li {
+    margin-top: 12px;
+}
+
+.stabled a {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 20px;
+}
+
+#infomationd li {
+    overflow-wrap: anywhere;
+}
+
+#infomationd i {
+    margin-right: 8px;
+    color: #f97316;
+}
+
+.footer-bottomd {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 24px 0;
+    border-top: 1px solid #44403c;
+    color: #a8a29e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottomd p {
+    margin: 0;
+}
