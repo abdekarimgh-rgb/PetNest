@@ -204,7 +204,7 @@ footer {
     margin: 14px;
 }
 
-article>img {
+article > img {
     border: 1px solid white;
     border-radius: 12px;
 }
