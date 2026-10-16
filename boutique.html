@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="boutique.css">
+  <link rel="stylesheet" href="header.css"> 
   <link rel="stylesheet" href="footer.css"> 
-    <link rel="stylesheet" href="header.css"> 
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
   <title>PetNest</title>
 </head>
-<body>
   <body>
 
   <header class="site-header">
@@ -49,7 +49,8 @@
       burger.textContent = isOpen ? "✕" : "☰";
     });
   </script>
-  <section class="firstSection">
+  <main>
+    <section class="firstSection">
     <div class="grid">
       <img class="grid1" src="img/croquette1.png" alt="croquettes pour les Chiens">
       <img src="img/croquette2.png" alt="VUE 1">
@@ -113,7 +114,7 @@
       </div>
 
       <form>
-        <h3 class="h3">Laisser un avis</h3>
+        <h4 class="h3">Laisser un avis</h4>
 
         <label for="note">Votre note *</label>
         <div>
@@ -135,7 +136,8 @@
     </div>
 
   </section>
-   <footer>
+  </main>
+  <footer>
       <section class="stabled">
         <div>
           <h2>PetNest</h2>
@@ -184,10 +186,7 @@
         <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
       </div>
     </footer>
-
-
-
-
+   
 </body>
 
 </html>
