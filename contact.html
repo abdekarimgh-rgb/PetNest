@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
@@ -50,158 +49,227 @@
 
     <main>
         <section class="Hero"> 
-            <div>
+            <div class="FAQ-resp1">
                 <p class="page-title">SERVICES ET CONTACT</p>
-                <h1> Des soins sur mesure pour votre compagnon </h1>
+                <h1>Des soins sur mesure pour votre compagnon</h1>
                 <p id="toilettage">Toilettage, pension et conseil : réservez un créneau ou posez-nous vos questions.</p>
             </div>
         </section>
 
-        <section class="FAQ">
-            <div class="FAQ-Section">
+        <section class="FAQ FAQ-Section-Container">
+            <div class="FAQ-Intro">
                 <p id="FAQ-Titre">FAQ</p>
                 <h1 class="FAQ-Title">Questions fréquentes</h1>
                 <p class="FAQ-Formule">Vous ne trouvez pas votre réponse ? Écrivez-nous via le formulaire ci-dessous.</p>
                 <button class="FAQ-btn">Nous écrire</button>
             </div>
 
-<details class="FAQ-QA" open>
-    <summary class="FAQ-Questions">
-        Faut-il prendre rendez-vous pour le toilettage ?
-        <span class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
-        </span>
-    </summary>
-    <p>Oui, le toilettage se fait uniquement sur rendez-vous, du lundi au samedi. Comptez 1 h à 2 h selon la taille de l'animal.</p>
-</details>
+            <div class="FAQ-Accordion-Group">
+                <details class="FAQ-QA" open>
+                    <summary class="FAQ-Questions">
+                        Faut-il prendre rendez-vous pour le toilettage ?
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p>Oui, le toilettage se fait uniquement sur rendez-vous, du lundi au samedi. Comptez 1 h à 2 h selon la taille de l'animal.</p>
+                </details>
 
-<details class="FAQ-QA">
-    <summary class="FAQ-Questions">
-        Quels documents faut-il pour la pension ?                
-        <span class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
-        </span>
-    </summary>
-    <p>Il faut présenter les documents nécessaires de l'animal.</p>
-</details>
+                <details class="FAQ-QA">
+                    <summary class="FAQ-Questions">
+                        Quels documents faut-il pour la pension ?                
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p>Il faut présenter les documents nécessaires de l'animal.</p>
+                </details>
 
-<details class="FAQ-QA">
-    <summary class="FAQ-Questions">
-        Comment se passe une adoption ?               
-        <span class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
-        </span>
-    </summary>
-    <p>L'adoption se fait en plusieurs étapes pour assurer le bien-être de l'animal...</p>
-</details>
+                <details class="FAQ-QA">
+                    <summary class="FAQ-Questions">
+                        Comment se passe une adoption ?               
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p>L'adoption se fait en plusieurs étapes pour assurer le bien-être de l'animal...</p>
+                </details>
 
-<details class="FAQ-QA">
-    <summary class="FAQ-Questions">   
-        Livrez-vous à domicile ?               
-        <span class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
-        </span>
-    </summary>
-    <p>Oui, nous proposons un service de livraison à domicile selon votre zone.</p>
-</details>
+                <details class="FAQ-QA">
+                    <summary class="FAQ-Questions">   
+                        Livrez-vous à domicile ?               
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p>Oui, nous proposons un service de livraison à domicile selon votre zone.</p>
+                </details>
 
-<details class="FAQ-QA">
-    <summary class="FAQ-Questions">
-        Puis-je retourner un produit ?               
-        <span class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
-        </span>
-    </summary>
-    <p>Oui, les produits non utilisés et conservés dans leur emballage d’origine peuvent être retournés sous 14 jours.</p>
-</details>
+                <details class="FAQ-QA">
+                    <summary class="FAQ-Questions">
+                        Puis-je retourner un produit ?               
+                        <span class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p>Oui, les produits non utilisés et conservés dans leur emballage d’origine peuvent être retournés sous 14 jours.</p>
+                </details>
+            </div>
         </section>
-<section class="contact-section">
-    <div class="contact-card">
-        <h2 class="contact-title">Prendre rendez-vous</h2>
-        
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nom complet *</label>
-                <input type="text" id="name" placeholder="Ex. Sara Benali" required>
-            </div>
+        <div class="main-content-grid">
+            <section class="contact-section">
+                <div class="contact-card">
+                    <h2 class="contact-title">Prendre rendez-vous</h2>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" placeholder="Ex. Sara Benali" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="email">Adresse e-mail *</label>
-                <input type="email" id="email" placeholder="vous@exemple.com" required>
-            </div>
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" placeholder="vous@exemple.com" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="service">Service *</label>
-                <select id="service" required>
-                    <option value="toilettage" selected>Toilettage</option>
-                    <option value="pension">Pension</option>
-                    <option value="conseil">Conseil</option>
-                </select>
-            </div>
+                        <div class="form-group">
+                            <label for="service">Service *</label>
+                            <select id="service" required>
+                                <option value="toilettage" selected>Toilettage</option>
+                                <option value="pension">Pension</option>
+                                <option value="conseil">Conseil</option>
+                            </select>
+                        </div>
 
-            <div class="form-group">
-                <label for="date">Date souhaitée *</label>
-                <input type="date" id="date" value="2026-11-15" required>
-            </div>
+                        <div class="form-group">
+                            <label for="date">Date souhaitée *</label>
+                            <input type="date" id="date" value="2026-11-15" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" rows="4" placeholder="Race, taille et besoins particuliers de votre animal..."></textarea>
-            </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="4" placeholder="Race, taille et besoins particuliers de votre animal..."></textarea>
+                        </div>
 
-            <button type="submit" class="submit-btn">Envoyer la demande</button>
-        </form>
-    </div>
-</section>
+                        <button type="submit" class="submit-btn">Envoyer la demande</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="practical-info-section">
+                <div class="shop-card">
+                    <h3 class="shop-title">La boutique</h3>
+                    
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>12 rue des Lilas, Casablanca</span>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span>05 22 00 00 00</span>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>bonjour@petnest.ma</span>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <span>Lundi – samedi : 9 h – 19 h</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.2845240014863!2d-7.6459111245457345!3d33.57196114293837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d300712da069%3A0x8cf616a5a548d344!2srue%20des%20lilas!5e0!3m2!1sen!2sma!4v1792149308776!5m2!1sen!2sma" 
+                        title="Plan d'accès"
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+
+                <div class="social-section">
+                    <h4 class="social-title">Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn instagram" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Partager">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-      <footer>
-    <section class="stabled">
-      <div>
-        <h2>PetNest</h2>
-        <p>
-          Produits, adoption responsable et services
-          pour le bien-être de vos animaux
-        </p><br>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-solid fa-share"></i></a>
-      </div>
 
-      <div>
-        <h3>Boutiques</h3>
-        <ul>
-          <li>Chiens</li>
-          <li>Chats</li>
-          <li>Rongueurs</li>
-          <li>Oiseaux</li>
-          <li>Poissons</li>
-        </ul>
-      </div>
+    <footer>
+        <section class="stabled">
+            <div>
+                <h2>PetNest</h2>
+                <p>
+                    Produits, adoption responsable et services
+                    pour le bien-être de vos animaux
+                </p><br>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
 
-      <div>
-        <h3>Aide</h3>
-        <ul>
-          <li>FAQ</li>
-          <li>Livraison</li>
-          <li>Retours</li>
-          <li>Conditions générales</li>
-        </ul>
-      </div>
+            <div>
+                <h3>Boutiques</h3>
+                <ul>
+                    <li>Chiens</li>
+                    <li>Chats</li>
+                    <li>Rongueurs</li>
+                    <li>Oiseaux</li>
+                    <li>Poissons</li>
+                </ul>
+            </div>
 
-      <div>
-        <h3>Contact</h3>
-        <ul id="infomationd">
-          <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
-          <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
-          <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
-          <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
-        </ul>
-      </div>
-    </section>
+            <div>
+                <h3>Aide</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Livraison</li>
+                    <li>Retours</li>
+                    <li>Conditions générales</li>
+                </ul>
+            </div>
 
-    <div class="footer-bottomd">
-      <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
-    </div>
-  </footer>
+            <div>
+                <h3>Contact</h3>
+                <ul id="infomationd">
+                    <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
+                    <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
+                    <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
+                    <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer-bottomd">
+            <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
+        </div>
+    </footer>
 </body>
 </html>
