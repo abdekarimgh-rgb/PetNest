@@ -88,7 +88,8 @@ footer {
 
 @media (max-width: 767px) {
     footer {
-        padding: 32px 20px 0;
+        width: 100%;
+        /* padding: 32px 20px 0; */
     }
 
     .stabled {

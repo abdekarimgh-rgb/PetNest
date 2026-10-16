@@ -148,7 +148,7 @@ body {
 }
 .divv{
     margin-top: 0%;
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 .div2{
     display: flex;
@@ -316,13 +316,14 @@ button:hover {
 
     .divv,
     form {
-        width: 100%;
+        width: 80%;
         max-width: none;
     }
 
     .titre-avis {
         width: 95%;
     }
+
 }
 
 
