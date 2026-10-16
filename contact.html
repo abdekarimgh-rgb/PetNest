@@ -115,6 +115,44 @@
     <p>Oui, les produits non utilisés et conservés dans leur emballage d’origine peuvent être retournés sous 14 jours.</p>
 </details>
         </section>
+<section class="contact-section">
+    <div class="contact-card">
+        <h2 class="contact-title">Prendre rendez-vous</h2>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" placeholder="Ex. Sara Benali" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse e-mail *</label>
+                <input type="email" id="email" placeholder="vous@exemple.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service *</label>
+                <select id="service" required>
+                    <option value="toilettage" selected>Toilettage</option>
+                    <option value="pension">Pension</option>
+                    <option value="conseil">Conseil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date souhaitée *</label>
+                <input type="date" id="date" value="2026-11-15" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" rows="4" placeholder="Race, taille et besoins particuliers de votre animal..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer la demande</button>
+        </form>
+    </div>
+</section>
     </main>
       <footer>
     <section class="stabled">
