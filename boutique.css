@@ -281,3 +281,44 @@ button:hover {
      width: 80%;
 }
 
+
+@media (max-width: 768px) {
+    .firstSection {
+        width: 95%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: none;
+        grid-template-rows: 240px 80px;
+    }
+
+    .div1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+
+    .secondSection {
+        width: 95%;
+        flex-direction column;
+        gap: 20px;
+    }
+
+    .divv,
+    form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .titre-avis {
+        width: 95%;
+    }
+}
+
+

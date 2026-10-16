@@ -1,0 +1,76 @@
+footer {
+    padding: 48px 24px 0;
+    background: #1c1917;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+.stabled {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stabled div {
+    flex: 1 1 200px;
+    min-width: 0;
+    margin-bottom: 16px;
+}
+
+.stabled h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stabled h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stabled p,
+.stabled ul {
+    color: #a8a29e;
+    font-size: 16px;
+}
+
+.stabled li+li {
+    margin-top: 12px;
+}
+
+.stabled a {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 20px;
+}
+.stabled a{
+    color: white;
+}
+#infomationd i {
+    margin-right: 8px;
+    color: #f97316;
+}
+
+.footer-bottomd {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 24px 0;
+    border-top: 1px solid #44403c;
+    color: #a8a29e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottomd p {
+    margin: 0;
+}
