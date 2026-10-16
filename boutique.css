@@ -144,36 +144,43 @@ body {
     width: 80%;
     display: flex;
     gap: 2%;
+    margin-bottom: 50px;
 }
 .divv{
     margin-top: 0%;
+    margin-right: 120px;
 }
 .div2{
     display: flex;
+    /* justify-content: start; */
+    padding-right: 170px;
     flex-direction: row;
     width: 196px;
     height: 48px;
-    padding: 0;
+    
 }
 
 
-article{
+article {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 10px 10px 10px;
     border: 1px solid #E7E5E4;
     border-radius: 10px;
     background-color: #FFFFFF;
-    margin: 15px 0 15px 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    
 }
-article p{
-    margin-left: 10px;
+
+article p {
+    margin: 0 0 10px;
+    /* padding-left: 0; */
     color: #57534E;
     font-size: 12px;
-    margin-top: 20px;
-    
+}
+
+article p:last-child {
+    margin-bottom: 0;
 }
 form {
     background-color: #FFFFFF;
@@ -258,11 +265,6 @@ button:hover {
 }
 
 
-.titre-avis {
-    width: 100%;
-    margin: 20px 0;
-}
-
 .span-avis {
     margin-left: 120px;
     color: #C2410C;
@@ -278,7 +280,4 @@ button:hover {
     border-top: 1px solid #ddd;
      width: 80%;
 }
-
-
-
 
