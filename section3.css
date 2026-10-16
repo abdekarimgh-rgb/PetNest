@@ -1,0 +1,85 @@
+.animal-all {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.animal-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid white;
+    border-radius: 24px;
+    background-color: white;
+}
+.animal-img {
+    display: block;
+    width: 100%;
+    height: 360px;
+}
+
+.animal-face {
+    margin: 16px 18px 8px;
+}
+
+.animal-desc {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.animal-align {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    margin: 0 18px 18px;
+}
+
+.animal-text {
+    font-size: 18px;
+    font-weight: normal;
+    color: #292524;
+}
+
+.animal-button {
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    background-color: white;
+    color: #c2410c;
+    border: 2px solid #c2410c;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .animal-all {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 28px;
+        max-width: 1240px;
+        padding: 0 20px 32px;
+    }
+
+    .animal-card {
+        flex: 1;
+    }
+
+    .animal-img {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .animal-align {
+        flex: 1;
+    }
+
+    .animal-text {
+        min-height: 54px;
+    }
+}

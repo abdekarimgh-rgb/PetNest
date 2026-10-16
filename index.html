@@ -7,14 +7,15 @@
   <title>PetNest</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-      <link rel="stylesheet" href="acceuil.css">
-      <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="acceuil.css">
+  <link rel="stylesheet" href="section3.css">
+  <link rel="stylesheet" href="header.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
-
-<body>
   <header class="site-header">
 
     <a href="index.html" class="logo">
@@ -37,7 +38,20 @@
     </nav>
 
   </header>
-    <section class="herod">
+
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      burger.setAttribute("aria-expanded", String(isOpen));
+      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+      burger.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
+  <section class="herod">
     <div class="test">
       <h2>Tout pour le bonheur de vos animaux</h2>
       <p>
@@ -61,70 +75,159 @@
       </div>
       <p class="end">Voir tout</p>
     </div>
-  </section>
-  <footer>
-    <section class="stabled">
-      <div>
-        <h2>PetNest</h2>
-        <p>
-          Produits, adoption responsable et services
-          pour le bien-être de vos animaux
-        </p><br>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-solid fa-share"></i></a>
+    <div class="all">
+      <article class="card">
+        <img class="img-1" src="img/croquette.jpeg" alt="a cat trying to open a bag of croquette">
+        <div class="face">
+          <p class="desc">croquette saumon & riz</p>
+        </div>
+        <div class="align">
+          <p class="font2">49,90 €</p>
+          <button class="boton" type="submit">Ajouter</button>
+        </div>
+      </article>
+      <article class="card">
+        <img class="img-1" src="img/arbre.jpeg" alt="a cat sleeping on a pink tree for cats">
+        <div class="face">
+          <p class="desc">Arbre à chat 120 cm</p>
+        </div>
+        <div class="align">
+          <p class="font2">71,20 €</p>
+          <button class="boton" type="submit">Ajouter</button>
+        </div>
+      </article>
+      </article>
+      <article class="card">
+        <img class="img-1" src="img/cage.jpeg" alt="cage for hamsters or birds in pink">
+        <div class="face">
+          <p class="desc">Cage rongeur spacieuse</p>
+        </div>
+        <div class="align">
+          <p class="font2">64,50 €</p>
+          <button class="boton" type="submit">Ajouter</button>
+        </div>
+      </article>
+      <article class="card">
+        <img class="img-1" src="img/kitaqua.jpeg" alt="aquarium  for fishes in pink">
+        <div class="face">
+          <p class="desc">Kit aquarium 60 L</p>
+        </div>
+        <div class="align">
+          <p class="font2">129,00 €</p>
+          <button class="boton" type="submit">Ajouter</button>
+        </div>
+      </article>
+    </div>
+    <section class="catalogues">
+      <div class="describe">
+        <div class="left">
+          <p class="top">ADOPTION RESPONSABLE</p>
+          <h2 class="middle">Ils attendnt une famille</h2>
+        </div>
+        <p class="end">tout les animaux</p>
       </div>
+      <div class="animal-all">
+        <article class="animal-card">
+          <img class="animal-img" src="img/bernese.jpeg" alt="a mountain dog inside a farm of flowers">
 
-      <div>
-        <h3>Boutiques</h3>
-        <ul>
-          <li>Chiens</li>
-          <li>Chats</li>
-          <li>Rongueurs</li>
-          <li>Oiseaux</li>
-          <li>Poissons</li>
-        </ul>
-      </div>
+          <div class="animal-face">
+            <p class="animal-desc">Moka</p>
+          </div>
 
-      <div>
-        <h3>Aide</h3>
-        <ul>
-          <li>FAQ</li>
-          <li>Livraison</li>
-          <li>Retours</li>
-          <li>Conditions générales</li>
-        </ul>
-      </div>
+          <div class="animal-align">
+            <p class="animal-text">Câline et calme, elle aime les siestes au soleil.</p>
+            <button class="animal-button" type="button">Découvrir Moka</button>
+          </div>
+        </article>
 
-      <div>
-        <h3>Contact</h3>
-        <ul id="infomationd">
-          <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
-          <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
-          <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
-          <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
-        </ul>
+        <article class="animal-card">
+          <img class="animal-img" src="img/border.jpeg" alt="a border collie dog in the nature">
+
+          <div class="animal-face">
+            <p class="animal-desc">Rocky</p>
+          </div>
+
+          <div class="animal-align">
+            <p class="animal-text">Joueur et sportif, idéal pour une famille active.</p>
+            <button class="animal-button" type="button">Découvrir Rocky</button>
+          </div>
+        </article>
+
+        <article class="animal-card">
+          <img class="animal-img" src="img/golden.jpeg" alt="a golder retriver smelling pink flowers">
+
+          <div class="animal-face">
+            <p class="animal-desc">Noisette</p>
+          </div>
+
+          <div class="animal-align">
+            <p class="animal-text">Curieuse et douce.</p>
+            <button class="animal-button" type="button">Découvrir Noisette</button>
+          </div>
+        </article>
       </div>
     </section>
+    <section>
+      <div class= "section4">
+      <h3 class = "tittre">Nos marques partenaires</h3>
+      <div class= "containe">
+        <p class="marque">Marque A</p>
+        <p class="marque">Marque B</p>
+        <p class="marque">Marque C</p>
+        <p class="marque">Marque D</p>
+        <p class="marque">Marque E</p>
+        <p class="marque">Marque F</p>
+      </div>
+    </section>
+    <footer>
+      <section class="stabled">
+        <div>
+          <h2>PetNest</h2>
+          <p>
+            Produits, adoption responsable et services
+            pour le bien-être de vos animaux
+          </p><br>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-solid fa-share"></i></a>
+        </div>
 
-    <div class="footer-bottomd">
-      <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
-    </div>
-  </footer>
-  <script>
-    const burger = document.getElementById("burger");
-    const navLinks = document.getElementById("navLinks");
+        <div>
+          <h3>Boutiques</h3>
+          <ul>
+            <li>Chiens</li>
+            <li>Chats</li>
+            <li>Rongueurs</li>
+            <li>Oiseaux</li>
+            <li>Poissons</li>
+          </ul>
+        </div>
 
-    burger.addEventListener("click", function () {
-      const isOpen = navLinks.classList.toggle("open");
+        <div>
+          <h3>Aide</h3>
+          <ul>
+            <li>FAQ</li>
+            <li>Livraison</li>
+            <li>Retours</li>
+            <li>Conditions générales</li>
+          </ul>
+        </div>
 
-      burger.setAttribute("aria-expanded", String(isOpen));
-      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-      burger.textContent = isOpen ? "✕" : "☰";
-    });
-  </script>
+        <div>
+          <h3>Contact</h3>
+          <ul id="infomationd">
+            <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
+            <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
+            <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
+            <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
+          </ul>
+        </div>
+      </section>
 
-
+      <div class="footer-bottomd">
+        <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
+      </div>
+    </footer>
 </body>
 
 </html>

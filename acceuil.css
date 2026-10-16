@@ -22,7 +22,9 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-size: inherit;
 } 
 
@@ -45,6 +47,7 @@ button {
     height: 48px;
     object-fit: contain;
 }
+
 .herod {
     padding: 32px 16px;
     background: #ffe4d3;
@@ -89,8 +92,8 @@ button {
     height: auto;
     margin-top: 24px;
     border-radius: 16px;
-    object-fit: cover;
 }
+
 footer {
     padding: 48px 24px 0;
     background: #1c1917;
@@ -130,7 +133,7 @@ footer {
     font-size: 16px;
 }
 
-.stabled li + li {
+.stabled li+li {
     margin-top: 12px;
 }
 
@@ -143,6 +146,7 @@ footer {
 .fa-solid {
     font-size: 20px;
 }
+
 #infomationd i {
     margin-right: 8px;
     color: #f97316;
@@ -157,24 +161,112 @@ footer {
     font-size: 14px;
     text-align: center;
 }
+
 .footer-bottomd p {
     margin: 0;
 }
-.catalogue{
-    background-color: #fff4ed;
+
+.catalogues {
+    background-color: #F0FFFA;
 }
-.describe{
+
+.describe {
     padding: 30px;
 }
-.top , .end{
+
+.top,
+.end {
     color: #c2410c;
 }
-.end{
+
+.end {
     margin: 20px;
 }
-.middle{
+
+.middle {
     font-size: 24px;
 }
+
+.croquette {
+    width: 50%;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.card,
+.croquette {
+    border: 1px solid #ffe4d3;
+    border-radius: 16px;
+    margin: 14px;
+}
+
+article>img {
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.boton {
+    display: flex;
+    justify-self: end;
+    background-color: #c2410c;
+    color: white;
+    border: #c2410c;
+    border-radius: 12px;
+    padding: 10px 10px;
+}
+
+.desc,
+.font2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.face {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.align {
+    margin: 0px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containe {
+    background-color: #f0fdfa;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #f0fdfa;
+    border-radius: 16px;
+}
+
+.marque {
+    background-color: #e7e5e4;
+    border: 1px solid #e7e5e4;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    text-align: center;
+    margin: 5px 5px
+}
+
+.section4 {
+    background-color: #f0fdfa;
+    padding: 10px;
+}
+
+.tittre {
+    text-align: center;
+    font-size: larger;
+    margin: 15px 0px;
+    background-color: #f0fdfa;
+}
+
 @media (min-width: 768px) {
     .herod {
         display: grid;
@@ -183,9 +275,11 @@ footer {
         gap: 32px;
         padding: 48px 32px;
     }
-    .test{
+
+    .test {
         grid-column: 2/6;
     }
+
     .herod h2,
     .herod p {
         max-width: 500px;
@@ -218,17 +312,68 @@ footer {
     .footer-bottomd {
         text-align: left;
     }
-    .end{
+
+    .end {
         margin-top: 30px;
         display: flex;
         justify-content: end;
     }
-    .left{
-        padding-bottom: 30px;
+
+    .left {
+        padding-bottom: 0px;
 
     }
-    .describe{
+
+    .describe {
         display: flex;
         justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .align {
+        margin: 0px 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .desc,
+    .font2 {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .all {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+    .img-1 {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .containe {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f0fdfa;
+        border: 1px solid #f0fdfa;
+        border-radius: 16px;
+    }
+    .marque{
+    background-color: #e7e5e4;
+    border: 1px solid #e7e5e4;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px 40px;
+    text-align: center;
+    margin : 5px 5px;
     }
 }
