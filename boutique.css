@@ -283,6 +283,9 @@ button:hover {
 
 
 @media (max-width: 768px) {
+    body{
+        margin: 0;
+    }
     .firstSection {
         width: 95%;
         flex-direction: column;
@@ -306,7 +309,7 @@ button:hover {
 
     .secondSection {
         width: 95%;
-        flex-direction column;
+        flex-direction :column;
         gap: 20px;
     }
 
