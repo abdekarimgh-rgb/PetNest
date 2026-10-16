@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="boutique.css">
+  <link rel="stylesheet" href="header.css"> 
+  <link rel="stylesheet" href="footer-s.css"> 
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <title>PetNest</title>
+</head>
+  <body>
+
+  <header class="site-header">
+
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Logo PetNest">
+      <h5>PetNest</h5>
+    </a>
+
+    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="navLinks"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks" class="nav">
+      <a href="index.html">Accueil <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="catalogue.html">Boutique <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="adoption.html">Adoption <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="services.html">Services <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html">Contactez-nous <i class="fa-solid fa-chevron-right text-xs text-slate-600"></i></a>
+      <a href="contact.html" class="nav-cta">Prendre RDV</a>
+    </nav>
+
+  </header>
+
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      burger.setAttribute("aria-expanded", String(isOpen));
+      burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+      burger.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
+  <main class="global">
+    <section class="firstSection">
+    <div class="grid">
+      <img class="grid1" src="img/croquette1.png" alt="croquettes pour les Chiens">
+      <img src="img/croquette2.png" alt="VUE 1">
+      <img src="img/croquette3.png" alt="VUE 2">
+      <img src="img/croquette4.png" alt="VUE3">
+      <img src="img/croquette1.png" alt="VUE 4">
+    </div>
+    <div class="div1">
+      <div>
+        <h1 class="h1"><b>Croquettes saumon & riz 10 kg</b></h1>
+        <p><b class="p1">49,90 €</b><sub> TTC · soit 4,99 € / kg</sub></p>
+        <p class="p2">Recette riche en saumon frais pour chiens adultes de toutes tailles. Sans colorant ni conservateur
+          artificiel</p>
+        <div class="flex1">
+          <div class="button1">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <div> <button class="button2" type="button">Ajouter au panier</button></div>
+        </div>
+      </div>
+      <div class="liste1">
+        <p><span class="check">✔ </span> livraison offerte dès 49 €</p>
+        <p><span class="check">✔ </span> Retour gratuit sous 30 jours</p>
+        <p><span class="check">✔ </span> Conseils personnalisés en boutique</p>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #FAFAF9;">
+
+    <div class="titre-avis">
+      <span class="span-avis">Avis (124)</span>
+      <hr>
+    </div>
+    <div class="secondSection">
+      <div class="divv">
+        <div class="div2">
+          <h2 style="font-size: 30px; font-weight: bold;">4,8</h2>
+          <div class="avis-4"> 
+            <p>⭐⭐⭐⭐⭐</p>
+          <p>Basé sur 124 avis</p></div>
+         
+        </div>
+
+        <article>
+
+          <p>⭐⭐⭐⭐⭐ Sara B. · 12 octobre 2026</p>
+
+          <p style="color: black;">Mon chien adore et son pelage est plus brillant. Livraison rapide.</p>
+        </article>
+
+        <article>
+
+
+          <p> ⭐⭐⭐⭐⭐ Youssef A. · 3 octobre 2026</p>
+
+
+          <p style="color: black;">Bonne qualité, grand format pratique. Le sac pourrait être refermable.</p><br>
+        </article>
+      </div>
+
+      <form>
+        <h4 class="h3">Laisser un avis</h4>
+
+        <label for="note">Votre note *</label>
+        <div>
+          <p>⭐⭐⭐⭐</p>
+        </div>
+
+        <label for="titre">Titre de l'avis *</label>
+        <input type="text" name="titre" placeholder="Ex. Excellent rapport qualité-prix" required>
+
+        <label for="commentaire">Votre commentaire *</label>
+        <textarea name="commentaire" rows="4" minlength="20" required></textarea>
+
+        <p>Le commentaire doit contenir au moins 20 caractères.</p>
+
+        <button class="buttonZ" type="submit">Publier mon avis</button>
+      </form>
+
+
+    </div>
+
+  </section>
+  </main>
+  <footer>
+      <section class="stabled">
+        <div>
+          <h2>PetNest</h2>
+          <p>
+            Produits, adoption responsable et services
+            pour le bien-être de vos animaux
+          </p><br>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-solid fa-share"></i></a>
+        </div>
+
+        <div>
+          <h3>Boutiques</h3>
+          <ul>
+            <li>Chiens</li>
+            <li>Chats</li>
+            <li>Rongueurs</li>
+            <li>Oiseaux</li>
+            <li>Poissons</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Aide</h3>
+          <ul>
+            <li>FAQ</li>
+            <li>Livraison</li>
+            <li>Retours</li>
+            <li>Conditions générales</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul id="infomationd">
+            <li><i class="fa-solid fa-location-dot"></i>12 rue des Lilas, Casablanca</li>
+            <li><i class="fa-solid fa-phone"></i>05 22 00 00 00</li>
+            <li><i class="fa-solid fa-envelope"></i>bonjour@petnest.ma</li>
+            <li><i class="fa-solid fa-clock"></i>Lun - Sam : 9 h - 19 h</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="footer-bottomd">
+        <p>&copy; 2026 PetNest. Tous droits réservés. Mentions légales · Confidentialité</p>
+      </div>
+    </footer>
+   
+</body>
+
+</html>
