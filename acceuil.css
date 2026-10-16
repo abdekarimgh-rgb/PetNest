@@ -318,7 +318,13 @@ article>img {
     }
 
     .all {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
     }
+.img-1{
+    width: 100%;
+    height: 35vh;
+}
 }
